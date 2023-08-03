@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Data Types</title>
+</head>
+<body>
+    <h1>Data Types</h1>
+    <script>
+        document.writeln("Welcome to java script")
+        console.log("Hello World.Welcome to JS")
+        course = "Java Full Stack Training"
+        console.log(course)
+        document.writeln(course+"\n")
+        
+        console.log("Data type of course is ",typeof(course))
+        classcount=51
+        console.log(classcount)
+        console.log("Data type of classcount is ",typeof(classcount))
+        hours=6.5
+        console.log(hours)
+        console.log("Data type of hours is ",typeof(hours))
+        rUSleeping=false
+        console.log(rUSleeping)
+        console.log("Data type of rUSleeping is ",typeof(rUSleeping))
+        marks = [23,19,22,13,25,'twenty four']
+        console.log(marks)
+        console.log("Data type of marks is ",typeof(marks))
+        console.log("java script object is a key value pair")
+        student1={
+            regno:1,
+            name:'Abhi',
+            course:'CS',
+            sem:7,
+            isStarted:true
+        }
+        console.log(student1)
+        console.log("Data type of student is ",typeof(student1))
+        console.log("Name is  ",student1.name)
+
+        studentarray=[]
+        studentarray.push(student1)
+        console.log("Student array ",studentarray)
+        student2={
+            regno:2,
+            name:'Varshini',
+            course:'CS',
+            sem:7,
+            isStarted:true
+        }
+        studentarray.push(student2)
+        console.log("Student array updated",studentarray)       
+    </script>
+</body>
+</html>

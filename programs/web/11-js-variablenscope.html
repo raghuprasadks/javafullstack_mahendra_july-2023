@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and scope</title>
+</head>
+<body>
+<h1>Variables and scope</h1>
+    <script>
+        course="full stack"
+        var hours=160
+        const pi=3.143
+        function scopeTest(){
+            console.log("scopeTest")
+            console.log("course ::"+course)
+            console.log("hours ::"+course)
+        }
+        scopeTest()
+        console.log("out side scope test :: course "+course)
+        //pi=3.1434
+        console.log("print 10's table")
+        table=10
+       // for(i=1;i<=10;i++) // scope of i is global
+       for(let i=1;i<=10;i++) // scope of i is global
+        {
+            console.log(table +" x "+i+" = "+table*i)
+        }
+        console.log("value of i "+i)
+    </script>
+
+</body>
+</html>

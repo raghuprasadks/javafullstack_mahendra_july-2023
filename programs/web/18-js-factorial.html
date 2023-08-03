@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+
+    <h1>Factorial</h1>
+    <script>
+    console.log("factorial normal function")
+    function factorial(num){
+        fact = 1
+        if (num == 0 || num==1)
+            fact=1
+        else
+        {
+            for (i=1;i<=num;i++){
+                fact = fact*i
+            }
+        }
+        return fact
+    }
+    num=3
+    fact =factorial(num)
+    console.log("factorial of "+num + " is "+fact)
+
+
+    </script>
+    
+</body>
+</html>

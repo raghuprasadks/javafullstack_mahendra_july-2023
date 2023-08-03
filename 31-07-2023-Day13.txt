@@ -1,0 +1,164 @@
+Agenda:
+
+First Half..
+
+1. Database - collection of information
+Database Management System (DBMS)
+Software/application to manage data
+Store,retrieve,modify,delete,search,permission
+RDBMS - Relational Database Management System
+
+SQL 
+step1 - https://www.w3schools.com/sql/
+try it your self
+
+1. Write a query to display information
+in customer table
+select * from customer
+2. Write a query to display customers
+of Germany
+SELECT * FROM Customers where country = 'Germany'
+3. Write a query to display customers
+of Germany who lives in Berlin
+SELECT * FROM Customers where country = 'Germany' and City='Berlin'
+4. Write a query to display customers
+of Germany or France
+SELECT * FROM Customers where country = 'Germany' or country='France'
+
+SELECT * FROM Customers where country in ('Germany','France')
+5. Write a query to display customers of
+countries other than Germany or France
+SELECT * FROM Customers where country not in ('Germany','France')
+
+6. Write a query to display unique countries
+in customer table
+
+SELECT distinct country FROM Customers
+
+7. Insert a new customer
+insert into <tablename> values ()
+CustomerID	CustomerName	ContactName	Address	City	PostalCode	Country
+insert into Customers(CustomerName,ContactName,Address,City,postalcode,country) values('raghu','vidya','1094,Indushankara,Jakkuru','Bengaluru',560077,'India')
+
+8. Update a city of a customer
+update customer set city='Salem' where customerid=1
+
+update customer set city='Salem',country='India' where customerid=1
+9. Write a query to delete a customer
+delete from customer where customerid=1
+
+My sql
+1. services in windows search
+search for mysql 
+check whether this service is running
+2. Connect the server using workbench 
+
+type workbench in search
+MySQL workbench
+
+3. Create my sql connection
+
+4.create schema/database
+
+CREATE SCHEMA `mahendradb` ;
+
+CREATE TABLE `mahendradb`.`customer` (
+  `customerid` INT NOT NULL AUTO_INCREMENT,
+  `customername` VARCHAR(100) NOT NULL,
+  `location` VARCHAR(100) NOT NULL,
+  `pincode` INT NOT NULL,
+  PRIMARY KEY (`customerid`));
+
+
+
+10. Display count of records in customer table
+
+select count(*) from customer
+
+SELECT count(*) as totalrecordcount FROM Customers;
+
+wildcard character
+11. Display customers whose name start with a
+
+select * from customer where customername like 'a%'
+12. ends with a
+SELECT CustomerName, City, Country FROM Customers where CustomerName like '%a'
+
+13. name contains a
+SELECT CustomerName, City, Country FROM Customers where CustomerName like '%a%'
+
+14. built-in functions (aggregate functions)
+max,min,avg,count,sum
+
+select max(price) as maximumprice from Products
+select min(price) as minimumprice from Products
+select avg(price) as averageprice from Products
+select sum(price) as totalprice from Products
+
+ANSI SQL
+T SQL - Transact SQL - Microsoft SQL
+
+
+
+JAVA 
+
+Inner Class in Java 
+
+class inside a class
+
+
+Streaming api in java
+
+InputStream/OutputStream
+
+
+interface DemoInterface{
+
+public static staticmethod(){
+System.out.println("static method");
+}
+
+publi
+public void info(); // abstract method
+
+}
+
+class DemoClass implements DemoInterface{
+}
+
+
+Group discussion
+
+Topic : Artificial Intelligence will take out all jobs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Second Half:
+1. Java

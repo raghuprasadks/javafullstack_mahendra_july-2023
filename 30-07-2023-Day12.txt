@@ -1,0 +1,41 @@
+Agenda:
+First Half
+Java Script
+1. Few array methods - done
+2. Function Scope - done
+3. Object Constructors - done
+4. Arrow functions - done 
+5. Recursion  - done
+Write a java script function to find 
+the factorial of a given number
+
+factorial(num) - without using recursion
+
+find the factorial of the number
+fact 3 = 3 X 2 X 1 = 6
+
+6. Closure
+
+A closure is a function having access to the parent scope, 
+even after the parent function has closed.
+
+function hello(){
+console.log('Hello')
+}
+hello()
+hello()
+
+self calling function
+
+(function hello(){
+console.log('Hello')
+})()
+
+
+Second Half 
+Java
+
+Searching and Sorting
+
+
+

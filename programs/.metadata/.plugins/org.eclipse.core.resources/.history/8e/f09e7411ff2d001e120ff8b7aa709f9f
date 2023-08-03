@@ -1,0 +1,10 @@
+package association;
+
+public class TestAssociation {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

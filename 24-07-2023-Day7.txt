@@ -1,0 +1,39 @@
+Agenda:
+Data Structures
+Linear and Non linear
+
+Linear Data structure - 
+static - Array
+Dyanamic - List,Stack,Queue
+
+
+https://www.geeksforgeeks.org/data-structures/?ref=lbp
+
+1. Create ArrayDemo program
+
+a.create marks integer arrary to store
+six elements (marks - 25)
+b. Display all elements in the array
+c. Update the value of third element
+d. Display marks that are greater than 15
+e. Find the total number of students
+who got marks equal to 25
+
+
+Collection Framework
+
+
+Array
+
+1. Given runs=[21,22,42,33,46] integer array
+
+a. Find the total of all elements
+in the array
+b. Find the total of even numbers
+iin the array
+c. Find the count of odd numbers 
+in the array
+
+d. Find the maximum run in the runs array
+e. Find the minimum run in the runs array
+

@@ -1,0 +1,103 @@
+Agenda:
+First half
+1. Java Script - 
+a.Programming language
+b.Runs on the browser
+c.Scripting programming language
+d. You need attach javascript with html
+to run the script
+e. Official name of javascript is ECMA Script
+f. Used for DOM (Document Object Model) manipulation
+g. Dynamically modifies DOM
+h. User interaction
+Building blocks of js
+variables,operators,loops,functions,
+conditional statements,object,array
+Object Based Programming language
+Interpreter
+Data types in js - string,number (full number,fraction),boolean
+Arrays data type is object
+you can store more than one value at a time
+array is dynamic
+array is heterogeneous
+
+3-js-assignment.html
+a. Write a function to check a number
+is odd or even
+function oddOrEven(num)
+{
+}
+b. Write a function to check a given number
+is prime or not
+function isPrime(num)
+{
+}
+
+
+Types of JavaScript Operators
+There are different types of JavaScript operators:
+
+Arithmetic Operators
+Assignment Operators
+Comparison Operators
+String Operators
+Logical Operators
+Bitwise Operators
+Ternary Operators
+Type Operators
+
+Prompt and alert
+expression
+if((n2 > n1) && (n2>n3))
+
+let const var - scope
+var global scope
+const if you define any variable with const
+you cannot change
+equivalent to final in java
+let is block level scope
+
+course="full stack"
+course is global scope (var)
+var course="full stack"
+
+JavaScript Output
+document.write()
+prompt
+alert
+
+
+
+
+
+
+Second half
+1. Java
+
+Object Oriented Analyis/Modelling/Design
+a. Use Case Diagram
+2. Class diagram
+
+customer and address
+Association - Aggregation/Composition
+
+Customer Class
+a. constructor with following
+attributes - id,name,mobile,email
+
+toString()
+setter and getter
+
+Address Class
+a. Constructor with following attributes
+houseno - 1094
+housename - InduShankara
+street
+location
+landmark
+pincode
+addresstype - home/office
+toString
+
+
+

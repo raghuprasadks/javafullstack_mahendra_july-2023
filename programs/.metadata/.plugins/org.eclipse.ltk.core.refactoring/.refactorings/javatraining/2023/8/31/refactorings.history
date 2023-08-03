@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;database.JDBCDemo_1&apos; to &apos;JDBCDemo_1_CRUD&apos;&#x0D;&#x0A;- Original project: &apos;javatraining&apos;&#x0D;&#x0A;- Original element: &apos;database.JDBCDemo_1&apos;&#x0D;&#x0A;- Renamed element: &apos;database.JDBCDemo_1_CRUD&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;JDBCDemo_1&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;database{JDBCDemo_1.java[JDBCDemo_1" matchStrategy="1" name="JDBCDemo_1_CRUD" qualified="false" references="true" similarDeclarations="false" stamp="1690967043907" textual="false" version="1.0"/>
+</session>

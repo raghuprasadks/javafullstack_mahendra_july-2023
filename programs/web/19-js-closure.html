@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+
+    <h1>Function scope</h1>
+
+    <script>
+        let numinfunction // global
+        const pi=3.143 // global
+        var course ="fullstack" //global
+        function functionscope(num){
+           // global score or public
+            //numinfunction=num
+            // block level or private
+            //let numinfunction=num
+            numinfunction=num
+            console.log("functionscope "+numinfunction)
+            console.log("const pi "+pi)
+            course = "java full stack"
+            console.log("course inside function "+course)
+            //pi=3.1456 - throws error
+        }
+
+        functionscope(3)
+        //console.log("outside function "+num)
+        console.log("outside function numinfunction "+numinfunction)
+        console.log("outside function const pi "+pi)
+        console.log("outside function course "+course)
+        
+
+        function parent(){
+            name="parent"
+            function child(){
+                console.log("name ::"+name)
+            }
+            child()
+
+        }
+
+        parent()
+
+    </script>
+    
+</body>
+</html>

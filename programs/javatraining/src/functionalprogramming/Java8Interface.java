@@ -1,0 +1,50 @@
+package functionalprogramming;
+
+public class Java8Interface implements Alarm{
+
+	public static void main(String[] args) {
+		Alarm j8 = new Java8Interface();
+		System.out.println("Get Brand " +j8.getBrand());
+		j8.turnAlarmOn();
+		System.out.println("HP "+Alarm.getHorsePower(100, 50));
+	}
+
+	@Override
+	public String getBrand() {
+		// TODO Auto-generated method stub
+		return "TVS";
+	}
+
+	@Override
+	public String speedUp() {
+		// TODO Auto-generated method stub
+		return "Moving fast";
+	}
+
+	@Override
+	public String slowDown() {
+		// TODO Auto-generated method stub
+		return "Moving slow";
+	}
+
+}
+
+interface Alarm {
+	String getBrand();
+    
+    String speedUp();
+    
+    String slowDown();
+
+    default String turnAlarmOn() {
+        return "Turning the alarm on.";
+    }
+    
+    default String turnAlarmOff() {
+        return "Turning the alarm off.";
+    }
+    
+    static int getHorsePower(int rpm, int torque) {
+        return (rpm * torque) / 5252;
+    }
+}

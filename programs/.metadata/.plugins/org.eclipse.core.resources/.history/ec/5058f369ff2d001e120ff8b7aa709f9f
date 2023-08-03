@@ -1,0 +1,13 @@
+package association;
+
+public class TestAssociation {
+
+	public static void main(String[] args) {
+		Customer cust1 = new Customer();
+		cust1.id=1;
+		
+		System.out.println(cust1);
+
+	}
+
+}

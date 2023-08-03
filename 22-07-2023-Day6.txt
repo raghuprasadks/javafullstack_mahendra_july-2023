@@ -1,0 +1,130 @@
+Agenda:
+javac
+java
+path
+
+class object
+constructor
+default constructure
+
+1. Different ways of using static
+to define a variable
+to define a method/function
+to define a class
+to define a block
+
+2. method overloading
+
+
+Assignment:
+
+Write a program to Calculate area to demonstrate
+method overloading
+
+class Name : AreaCalculator
+
+write following static methods
+
+public static void area(int length,int width)
+should calculate area of a rectangle and print
+
+public static void area(float radius)
+should calculate area of a circle and print
+
+
+Inheritance
+method overriding
+
+Class Bank -
+
+SI(p,r,t)
+
+Class SBI
+5%
+Class HDFC
+6%
+
+
+ Inheritance types
+1. Single
+2. Multi level
+3. Hierarchical
+4. Multilevel
+5. Hybrid
+
+
+class A
+{
+public void profession()
+{
+sop("Politician")
+}
+
+public void profession(String name)
+{
+sop(name +"Politician")
+}
+
+
+}
+class B extends A{
+public void profession()
+{
+sop("IT Professsional")
+}
+
+}
+class C extends B{
+public void profession()
+{
+sop("Artist")
+}
+
+}
+
+
+Interface is a way to implment abstraction
+
+
+Recap:
+
+Command prompt
+java HelloWorld Java Training
+
+Ways of using static key word
+
+Access modifiers / Non access modifiers
+
+public - accessible anywhere
+private - only with in a class
+default - with in a package
+protected - with in a package and out side
+the package through inheritance
+
+non access modifiers
+
+
+9845547471 - Raghu Prasad
+
+final,abstract,protected
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

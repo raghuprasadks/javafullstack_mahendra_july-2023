@@ -1,0 +1,12 @@
+package association;
+
+public class Address {
+	
+	int houseno;
+	String housename;
+	String addresstype;
+	String location;
+	int pincode;
+
+
+}

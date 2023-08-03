@@ -1,0 +1,18 @@
+package association;
+
+public class Customer {
+	private int id;
+	private String name;
+	private long mobile;
+	private String email;
+	/**
+	public void setId(int id) {
+		this.id=id;
+	}
+	
+	public int getId() {
+		return this.id;
+	}
+	**/
+	
+}

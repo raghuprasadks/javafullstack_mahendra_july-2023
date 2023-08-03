@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body style="background-color: bisque;">
+    <h1>Simple Calculator</h1>
+    <label for="num1" style="color:brown">Enter a Number</label>
+    <input type="number" id="num1" name="num1"><br>
+    <label for="oper">Enter an Operators (+/-)</label>
+    <input type="text" id="oper" name="oper"><br>
+    <label for="num2">Enter another Number</label>
+    <input type="number" id="num2" name="num2"><br>
+    <input type="button" onclick="calculate()" value="Calculate">
+    <h1 id="result"></h1>
+    <script>
+        function calculate(){
+           // alert("button is clicked")
+           num1=parseInt(document.getElementById("num1").value)
+           oper=document.getElementById("oper").value
+           num2=parseInt(document.getElementById("num2").value)
+           res=0
+           if (oper=='+')
+                res= num1+num2
+            else if (oper =='-')
+                res= num1-num2
+            else
+                res="Invalid Operator"
+           // alert (res)
+           document.getElementById("result").innerHTML=res
+        }
+    </script> 
+</body>
+</html>

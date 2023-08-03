@@ -1,0 +1,24 @@
+package assignment;
+
+public class ArrayAssignment_1 {
+
+	public static void main(String[] args) {
+		System.out.println("Design a method to calculate the sum of n elements in an array");
+		int array[]= {10,20,30,10,20};
+		int total=0;
+		for (int arr:array)
+			total = total +arr;
+		
+		System.out.println("Total : "+total);
+
+	}
+	
+	public static int sumArray(int array[]) {
+		int total=0;
+		for (int arr:array)
+			total = total +arr;
+		return total;
+		
+	}
+
+}

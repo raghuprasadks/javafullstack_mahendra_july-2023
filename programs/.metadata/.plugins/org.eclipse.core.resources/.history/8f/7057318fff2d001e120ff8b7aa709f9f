@@ -1,0 +1,16 @@
+package association;
+
+public class TestAssociation {
+
+	public static void main(String[] args) {
+		Customer cust1 = new Customer();
+		//cust1.id=1; private you cannot set
+		
+		cust1.setId(1);
+		System.out.println(cust1.getId())
+		
+		System.out.println(cust1);
+
+	}
+
+}

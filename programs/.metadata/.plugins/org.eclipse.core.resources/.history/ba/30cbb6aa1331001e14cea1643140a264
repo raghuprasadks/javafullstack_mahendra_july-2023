@@ -1,0 +1,5 @@
+package database;
+
+public class JDBCDemo_2_PreparedStatement {
+
+}

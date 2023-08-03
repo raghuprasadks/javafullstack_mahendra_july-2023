@@ -1,0 +1,24 @@
+package innerclassdemo;
+
+public class OuterClass {
+	
+	public static void OuterClassMethod() {
+		System.out.println("Outer Class method");
+	}
+
+	public static void main(String[] args) {
+		OuterClassMethod();
+		
+		OuterClass.InnerClass innercls = new OuterClass().new InnerClass();
+
+		innercls.InnerClassMethod();
+	}
+	
+	class InnerClass{
+		
+		public void InnerClassMethod() {
+			System.out.println("Inner class method");
+		}
+	}
+
+}

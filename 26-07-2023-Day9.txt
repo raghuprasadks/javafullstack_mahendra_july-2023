@@ -1,0 +1,45 @@
+Agenda:
+
+Recap
+Exception Handling
+Functional programming
+
+1. Lamdba expression
+
+2. File Handling
+
+Input Stream
+Output Stream
+
+Excel file reading /writing 
+download additional package
+
+csv file
+comma seperated file
+
+regno,name,course
+
+
+1. Create a SimpleInterestCalculator
+to implement following interface using lambda expression
+
+// time is in years
+interface SimpleInterest{
+
+float calculateSI(float p,float roi,int time);
+}
+
+Reading and Writing to excel
+
+jar - java archive file
+
+group of class files
+
+
+
+
+
+
+
+
+

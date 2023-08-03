@@ -1,0 +1,9 @@
+package association;
+
+public class Customer {
+	private int id;
+	private String name;
+	private long mobile;
+	private String email;
+	
+}

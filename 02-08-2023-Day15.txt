@@ -1,0 +1,28 @@
+Agenda:
+
+JDBC
+
+Types of Drivers
+
+Download driver
+
+CREATE PROCEDURE insert_product_proc 
+(
+IN name varchar(50),
+IN description varchar(100),
+IN price int,
+IN supplierid int
+)
+BEGIN
+insert into product(name,description,price,supplierid) values (name,description,price,supplierid);
+END
+
+1. Download git for windows
+2. Create an account in github.com
+3. Create an account in aws
+https://portal.aws.amazon.com/
+
+StreamingAPI
+https://www.javatpoint.com/java-8-stream
+
+

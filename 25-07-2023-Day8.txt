@@ -1,0 +1,31 @@
+Agenda:
+1. String
+2. Exception Handling
+3. Java 8 Features - Functional Programming
+
+Assignment on String.
+
+1. String course = "Java Full Stack Training.I am Learning Java"
+a. Find total number of words in above
+statement - done
+b. Find the index of F
+c. Replace Training with Coaching
+d. Find the number of occurance of Java
+
+equals,==,compareTo
+StringBuilder
+StringBuffer
+Mutable String
+
+
+Real use cases - Account
+CustomException
+Functional Programming
+Lambda Expression 
+
+4.30
+5.15 to 6 pm to 
+7.30 pm
+
+
+

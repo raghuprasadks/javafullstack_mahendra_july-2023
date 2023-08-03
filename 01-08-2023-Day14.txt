@@ -1,0 +1,282 @@
+Agenda:
+First Half
+
+SQL + git
+
+
+
+SQL - Joins,Subqueries,group by functions,union
+stored procedures
+
+Product table
+code - int - primary key auto_increment
+name - varchar(50) not null
+desc - varchar(100) not null
+price - int
+supplierid -int - foreign key references to supplier(supplierid)
+
+Supplier table
+supplierid - int - primary key auto_increment
+suppliername - varchar(50)
+location - varchar(50)
+
+CREATE TABLE `mahendradb`.`supplier` (
+  `supplierid` INT NOT NULL AUTO_INCREMENT,
+  `suppliername` VARCHAR(50) NOT NULL,
+  `location` VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`supplierid`));
+
+CREATE TABLE `mahendradb`.`product` (
+  `code` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(50) NOT NULL,
+  `description` VARCHAR(100) NOT NULL,
+  `price` INT NULL,
+  `supplierid` INT NULL,
+  PRIMARY KEY (`code`),
+  INDEX `supplierid_idx` (`supplierid` ASC) VISIBLE,
+  CONSTRAINT `supplierid`
+    FOREIGN KEY (`supplierid`)
+    REFERENCES `mahendradb`.`supplier` (`supplierid`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+
+ALTER TABLE `mahendradb`.`product` 
+DROP FOREIGN KEY `supplierid`;
+ALTER TABLE `mahendradb`.`product` 
+CHANGE COLUMN `price` `price` INT NOT NULL ,
+CHANGE COLUMN `supplierid` `supplierid` INT NOT NULL ;
+ALTER TABLE `mahendradb`.`product` 
+ADD CONSTRAINT `supplierid`
+  FOREIGN KEY (`supplierid`)
+  REFERENCES `mahendradb`.`supplier` (`supplierid`);
+
+insert into supplier(suppliername,location) values ('Dell','Chennai');
+insert into supplier(suppliername,location) values ('HP','Noida');
+insert into supplier(suppliername,location) values ('Lenovo','Bengalore');
+
+select * from supplier;
+insert into product(name,description,price,supplierid) values ('Laptop gen 7 intel','16 GB RAM HDD',80000,1);
+
+select * from product;
+
+
+select product.name,product.price,supplier.suppliername 
+from product
+inner join supplier on product.supplierid = supplier.supplierid
+
+inner join
+left join
+right join
+cross join
+
+SELECT Products.ProductName,Categories.CategoryName,Products.Price 
+FROM Products
+inner join Categories on Products.CategoryID = Categories.CategoryID
+
+alternative to inner join
+
+SELECT Products.ProductName,Categories.CategoryName,Products.Price 
+FROM Products,Categories where Products.CategoryID = Categories.CategoryID
+
+order by
+SELECT Products.ProductName,Categories.CategoryName,Products.Price 
+FROM Products,Categories where Products.CategoryID = Categories.CategoryID 
+order by Products.ProductName asc
+
+SELECT Products.ProductName,Categories.CategoryName,Products.Price 
+FROM Products,Categories where Products.CategoryID = Categories.CategoryID 
+order by Products.ProductName desc
+
+Subquery
+
+Display customers who have placed some orders
+
+select * from Customers where CustomerID in (select CustomerID from Orders)
+
+Display customers who have not placed some orders
+
+select * from Customers where CustomerID not in (select CustomerID from Orders)
+
+count
+select count(*) as totalcustomers from Customers
+
+limit - display first 5 records in a table
+
+select * from Customers limit 5
+
+select distinct Country  from Customers
+
+
+Display
+
+Germany - 21
+France - 11
+UK -10
+
+Group by
+
+select Country,Count(*) as totalcustomers from Customers group by Country
+
+
+select Country,Count(*) as totalcustomers from Customers 
+group by Country
+order by totalcustomers desc
+limit 1
+
+Write  following sql queries in mysql w3schools
+
+1. Display all the orders placed by customer of Germany
+select CustomerName,OrderId from Customers,Orders
+ where Country='Germany' and
+Customers.CustomerId=Orders.Customerid
+
+2. Display customername,total number of orders placed by customer having id 84
+customerid totalnumber
+84 10
+
+
+select Customers.CustomerID,count(Orders.OrderID) as totalorders from Customers,Orders
+where Customers.CustomerID=84 and
+Customers.CustomerID = Orders.CustomerID
+
+3. Display CustomerName,Employee last name for the orders placed by customers
+of France
+
+select Customers.CustomerName,Employees.LastName as EmployeeLastName from Customers,Orders,Employees
+where Country='France' and
+Customers.CustomerID = Orders.CustomerID and
+Orders.EmployeeID = Employees.EmployeeID
+
+
+Having 
+
+select Country,Count(*) as totalcustomers from Customers 
+group by Country 
+having totalcustomers>10 
+order by totalcustomers desc
+
+union - distinct records
+
+select CustomerName as Name,City from Customers
+union
+select SupplierName as Name,City from Suppliers
+
+union all - allows duplicates
+
+select CustomerName as Name,City from Customers
+union all
+select SupplierName as Name,City from Suppliers
+
+Exists
+
+SELECT SupplierName
+FROM Suppliers
+WHERE EXISTS (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.supplierID AND Price < 20);
+
+between
+
+select * from Products where Price between 10 and 50
+
+
+date
+
+date/datetime
+format - yyyy-mm-dd
+
+select * from Orders where OrderDate='1996-07-04'
+
+
+between
+
+select * from Orders where OrderDate between '1996-07-04' and '1999-07-04'
+
+DDL/DQL/DML/DCL/TCL
+https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/
+
+
+INSERT INTO Customers (CustomerName, City, Country)
+SELECT SupplierName, City, Country FROM Suppliers;
+
+MCQ Test
+https://www.w3schools.com/sql/sql_quiz.asp
+
+
+Stored Procedure
+
+A stored procedure is a prepared SQL code that you can save, so the code can be reused over and over again.
+
+https://www.digitalocean.com/community/tutorials/how-to-use-stored-procedures-in-mysql
+
+USE `mahendradb`;
+DROP procedure IF EXISTS `displayproducts`;
+
+DELIMITER $$
+USE `mahendradb`$$
+CREATE PROCEDURE `displayproducts` ()
+BEGIN
+select * from product;
+END$$
+
+
+
+
+
+CREATE PROCEDURE `new_procedure` ()
+BEGIN
+
+END
+
+
+
+CREATE PROCEDURE demostoredproc()
+BEGIN
+select * from product;
+END
+
+call demostoredproc
+
+DELIMITER ;
+
+Java - revision
+Dynamic programming
+Backtracking
+algorithms
+flowchart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Second Half:
+Revision of java

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Constructor</title>
+</head>
+<body>
+    <h1>Object Constructor</h1>
+    <script>
+        console.log("employee object")
+        employeedemo={
+            code:1,
+            name:'ravi',
+            sal:39399
+        }
+
+        console.log("employee code "+employeedemo.code)
+
+        console.log("array of employee object")
+
+        employees=[
+
+        {
+            code:1,
+            name:'ravi',
+            sal:39399
+        },
+        {
+            code:2,
+            name:'rekha',
+            sal:39399
+        },
+        {
+            code:3,
+            name:'akash',
+            sal:50000
+        }
+
+        ]
+
+        console.log("loop through")
+
+        for(i=0;i<employees.length;i++)
+        {
+            emp=employees[i]
+            console.log("code "+emp.code +" name "+emp.name +" sal "+emp.sal)
+        }
+
+        console.log("object constructor")
+
+        employeearr=[]
+        console.log("employee object constructor")
+
+        employee = function employeenew(code,name,sal){
+            this.code = code;
+            this.name = name;
+            this.sal  = sal;
+        }
+
+        console.log("employee object")
+
+        emp1 = new employee(1,'ganesh',30000)
+        emp2 = new employee(2,"ramesh",25000)
+        emp3 = new employee (3,"suresh",35000)
+        employeearr.push(emp1)
+        employeearr.push(emp2)
+        employeearr.push(emp3)
+
+        for(i=0;i<employeearr.length;i++){
+            employee = employeearr[i]
+            console.log("code "+employee.code + "name "+employee.name + " salary "+employee.sal)
+        }        
+    </script>
+</body>
+</html>

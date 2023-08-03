@@ -1,0 +1,11 @@
+package association;
+
+public class TestAssociation {
+
+	public static void main(String[] args) {
+		Customer cust1 = new Customer();
+		System.out.println(cust1);
+
+	}
+
+}

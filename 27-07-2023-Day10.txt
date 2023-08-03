@@ -1,0 +1,15 @@
+Agenda:
+Web Programming
+Download visual studio code/sublimetext/notepad++
+html/css
+
+Software development lifecycle
+Software development models
+Waterfall,iterative,agile
+Scrum,
+UML diagrams - class,sequence,state
+
+Solving sample programs
+
+
+

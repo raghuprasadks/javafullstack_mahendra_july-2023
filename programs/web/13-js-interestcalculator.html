@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body style="background-color: bisque;">
+    <h1>Simple Interest Calculator</h1>
+    <label for="prin" style="color:brown">Enter Principal Amount</label>
+    <input type="number" id="prin" name="prin"><br>
+    <label for="roi">Enter Rate Of Interest</label>
+    <input type="number" id="roi" name="roi"><br>
+    <label for="time">Enter time in years</label>
+    <input type="number" id="time" name="time"><br>
+    <input type="button" onclick="calculate()" value="Calculate">
+    <input type="button" onclick="reset()" value="Reset"><br>
+    
+    <h1 id="result"></h1>
+    <!--
+    <script>
+        function calculate(){
+           // alert("button is clicked")
+           prin=parseInt(document.getElementById("prin").value)
+           roi=parseInt(document.getElementById("roi").value)
+           time=parseInt(document.getElementById("time").value)
+           si=(prin*roi*time)/100
+           document.getElementById("result").innerHTML="Simple Interest is "+si
+        }
+
+        function reset(){
+            document.getElementById("prin").value=""
+           document.getElementById("roi").value=""
+           document.getElementById("time").value=""
+           document.getElementById("result").innerHTML=""            
+        }
+    </script> 
+    -->
+    <script src="simpleinterest.js"></script>
+</body>
+</html>

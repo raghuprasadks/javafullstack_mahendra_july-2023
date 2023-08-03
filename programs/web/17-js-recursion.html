@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursion</title>
+</head>
+<body>
+
+    <h1>Recursion</h1>
+
+    <script>
+
+        console.log("recursion function called endlessly")
+        function greet(){
+            console.log("greetings ")
+            greet()
+        }
+        //greet()
+        console.log("recursion")
+        function greetrecursion(n){
+            if (n==0)
+                return
+            console.log("greetings ")
+            greetrecursion(n-1)
+        }
+        greetrecursion(3)
+
+
+
+
+    </script>
+    
+</body>
+</html>

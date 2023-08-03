@@ -1,0 +1,37 @@
+https://www.geeksforgeeks.org/association-composition-aggregation-java/
+https://www.geeksforgeeks.org/inner-class-java/
+https://www.geeksforgeeks.org/inheritance-in-java/
+https://www.javatpoint.com/association-in-java
+https://www.geeksforgeeks.org/static-keyword-java/
+https://www.geeksforgeeks.org/static-keyword-java/
+https://www.edureka.co/blog/read-write-excel-file-in-java/
+
+apachepoi  - reading and writing data using
+excel,csv
+
+https://www.geeksforgeeks.org/reading-csv-file-java-using-opencsv/
+
+https://commons.apache.org/proper/commons-lang/download_lang.cgi
+https://www.geeksforgeeks.org/association-composition-aggregation-java/
+https://www.geeksforgeeks.org/sorting-algorithms/
+https://www.freecodecamp.org/news/recursion-in-javascript/
+https://www.programiz.com/javascript/recursion
+
+https://www.javacodemonk.com/fibonacci-using-dynamic-programming-in-java-and-kotlin-edba87e8
+
+https://dev.mysql.com/downloads/connector/j/
+https://www.javatpoint.com/example-to-connect-to-the-mysql-database
+
+30/52 are bringing their laptop
+
+
+https://www.javatpoint.com/java-8-stream
+
+
+echo "# javafullstack_mahendra_july-2023" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/raghuprasadks/javafullstack_mahendra_july-2023.git
+git push -u origin main
