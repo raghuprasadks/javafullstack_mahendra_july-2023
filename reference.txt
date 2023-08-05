@@ -35,3 +35,13 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/raghuprasadks/javafullstack_mahendra_july-2023.git
 git push -u origin main
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html
+
+https://www.javatpoint.com/Comparator-interface-in-collection-framework
+
+
+
+
+
+

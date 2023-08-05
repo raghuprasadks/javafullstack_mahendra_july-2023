@@ -1,0 +1,102 @@
+Agenda:
+Git
+Cloud Computing models
+git and git hub
+ipconfig
+
+www.kaushalya.tech
+click git link
+
+create trainingmaterial folder
+cmd trainingmaterial
+
+git clone https://github.com/raghuprasadks/javafullstack_mahendra_july-2023.git
+
+Demonstration of git commands
+Step 1 - create demomahendragit folder
+Step 2 - create index.html page
+Step 3 - add html code inside this
+Step 4 - login to github create a new repository demomahendragit
+step 5 - copy the git commands
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/raghuprasadks/demomahendragit.git
+git push -u origin main
+
+step 6 - open the demomahendragit in file explorer
+step 7 - type cmd in the address bar
+step 8 - git init
+step 9 - git add index.html
+step 10 - git commit -m "first commit"
+step 11 - git branch -M main
+step 12 - git remote add origin https://github.com/raghuprasadks/demomahendragit.git
+step 13 - git push -u origin main
+
+AWS
+
+https://aws.amazon.com/
+Step 1. SignUp
+Step 2. Login
+
+Services - S3 - Simple Storage Service 
+
+stores - files/images/video/data/static web site
+We can host the static website
+
+bucket
+EC2 - Elastic Cloud Compute
+
+RDS - Relational Database Service
+SNS - Simple Notification Service
+
+
+Freetier
+
+Create a virtual server
+
+Search for EC2 -> Launch Instance
+
+Key value pair
+
+RDP - Remote Desk Top
+
+
+Hosting Static Website
+
+
+Cloud Computing
+
+Service Models
+
+IAAS
+PAAS
+SAAS
+
+
+Deployement 
+Public 
+Private
+Hybrid
+
+AWS - https://aws.amazon.com/
+
+S3 - Simple Storage Service
+EC2 - Elastic Cloud Compute
+RDS - Relational Data Service
+SNS - Simple Notification Service
+
+
+Azure
+Google Cloud
+Alibaba
+Heroku
+
+
+
+
+
+
+
